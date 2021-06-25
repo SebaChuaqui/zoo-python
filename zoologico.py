@@ -43,6 +43,11 @@ class Jirafa(Zoo):
     def info(self):
         print(f"{type(self).__nombre__}: {self.nombre}")
 
+zoo1 = Zoo(input("Ingrese nombre del zoologico:"))
+
+
+
+
 
 
 
