@@ -29,14 +29,14 @@ class Tigre(Zoo):
     def info(self):
         print(f"{type(self).__nombre__}: {self.nombre}")
 
-class Panda:
+class Panda(Zoo):
     def __init__(self, zoo_nombre):
         super().__init__(zoo_nombre)
     
     def info(self):
         print(f"{type(self).__nombre__}: {self.nombre}")
 
-class Jirafa:
+class Jirafa(Zoo):
     def __init__(self, zoo_nombre):
         super().__init__(zoo_nombre)
     
