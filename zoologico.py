@@ -16,17 +16,32 @@ class Zoo:
         self.animales.append(Jirafa(nombre))
 
     def imprimir_info(self):
-        print("-"*20, self.zoo_nombre, "-"*20)
+        print("-"*20, self.nombre, "-"*20)
         for animal in self.animales:
             animal.info()
-        print("-"*20, self.zoo_nombre, "-"*20)
+        print("-"*20, self.nombre, "-"*20)
         return self
 
-class Tigre:
+class Tigre(Zoo):
+    def __init__(self, zoo_nombre):
+        super().__init__(zoo_nombre)
+    
+    def info(self):
+        print(f"{type(self).__nombre__}: {self.nombre}")
 
 class Panda:
+    def __init__(self, zoo_nombre):
+        super().__init__(zoo_nombre)
+    
+    def info(self):
+        print(f"{type(self).__nombre__}: {self.nombre}")
 
 class Jirafa:
+    def __init__(self, zoo_nombre):
+        super().__init__(zoo_nombre)
+    
+    def info(self):
+        print(f"{type(self).__nombre__}: {self.nombre}")
 
 
 
