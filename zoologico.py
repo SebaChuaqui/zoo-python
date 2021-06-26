@@ -1,54 +1,30 @@
-class Zoo:
+from clases.tigre import Tigre
+from clases.panda import Panda
+from clases.tiburon import Tiburon
+from colorama import init, Fore, Back, Style
+init()
 
-    def __init__(self,  zoo_nombre):
-        self.zoo_nombre = zoo_nombre
+class Zoo():
+    def __init__(self, zoo_name):
         self.animales = []
+        self.name = zoo_name
 
-    def agregar_tigre(self, nombre):
-        self.animales.append(Tigre(nombre))
-        return self
+    def add_tigre(self,animal):
+        self.animales.append(animal)
 
-    def agregar_panda(self,nombre):
-        self.animales.append(Panda(nombre))
-        return self
+    def add_panda(self,animal):
+        self.animales.append(animal)
 
-    def agregar_jirafa(self, nombre):
-        self.animales.append(Jirafa(nombre))
-
+    def add_tiburon(self,animal):
+        self.animales.append(animal)
+    
     def imprimir_info(self):
-        print("-"*20, self.nombre, "-"*20)
+        print("-"*20, self.name, "-"*20)
         for animal in self.animales:
-            animal.info()
-        print("-"*20, self.nombre, "-"*20)
-        return self
+            animal.display_info()
 
-class Tigre(Zoo):
-    def __init__(self, zoo_nombre):
-        super().__init__(zoo_nombre)
-    
-    def info(self):
-        print(f"{type(self).__nombre__}: {self.nombre}")
-
-class Panda(Zoo):
-    def __init__(self, zoo_nombre):
-        super().__init__(zoo_nombre)
-    
-    def info(self):
-        print(f"{type(self).__nombre__}: {self.nombre}")
-
-class Jirafa(Zoo):
-    def __init__(self, zoo_nombre):
-        super().__init__(zoo_nombre)
-    
-    def info(self):
-        print(f"{type(self).__nombre__}: {self.nombre}")
-
-zoo1 = Zoo(input("Ingrese nombre del zoologico:"))
-
-
-
-
-
+tigre1 = Tigre("Tigrito", 12, 15, 30)
+tigre1.display_info()
 
 
 
