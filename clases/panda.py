@@ -19,9 +19,6 @@ class Panda(Animal):
         return self
 
     def display_info(self):
-        print(f'''Soy el Panda: {self.nombre}, 
-                tengo: {self.edad} anios,
-                mi salud es de: {self.nivel_salud} y 
-                mi felicidad es de: {self.nivel_felicidad}''') 
+        print(f'''Soy el Panda: {self.nombre}, tengo: {self.edad} anios, mi salud es de: {self.nivel_salud} y mi felicidad es de: {self.nivel_felicidad}''')
         return self
 
