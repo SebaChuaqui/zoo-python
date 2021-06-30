@@ -3,7 +3,6 @@ from clases.animales import Animal
 class Tiburon(Animal):
     def __init__(self, especie, nombre, edad, nivel_salud, nivel_felicidad, atrib_unico):
         super().__init__(especie, nombre, edad, nivel_salud, nivel_felicidad)
-        
         self.especie = "Tiburon"
         self.edad = 15
         self.nivel_salud = 20
@@ -23,7 +22,7 @@ class Tiburon(Animal):
         return self
     
     def display_info(self):
-        print(f'''Soy el Tiburon: {self.nombre}, tengo: {self.edad} anios, mi salud es de: {self.nivel_salud}, mi felicidad es de: {self.nivel_felicidad} y hoy nade: {self.atrib_unico} metros''')
+        print(f'''Soy el Tiburon: {self.nombre}, tengo: {self.edad} anios, mi salud es de: {self.nivel_salud}, mi felicidad es de: {self.nivel_felicidad} y hoy nade: {self.atrib_unico} kms.''')
         return self
     
 if __name__== '__main___':
