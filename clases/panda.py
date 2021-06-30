@@ -7,7 +7,7 @@ class Panda(Animal):
         self.edad = 15
         self.nivel_salud = 20
         self.nivel_felicidad = 10
-        self.atrib_unico = 100
+        self.atrib_unico = atrib_unico
 
     def alimento(self):
         self.nivel_salud += 45
@@ -22,7 +22,7 @@ class Panda(Animal):
         return self
 
     def display_info(self):
-        print(f'''Soy el Panda: {self.nombre}, tengo: {self.edad} anios, mi salud es de: {self.nivel_salud} , mi felicidad es de: {self.nivel_felicidad} y duermo: {self.duerme}''')
+        print(f'''Soy el Panda: {self.nombre}, tengo: {self.edad} anios, mi salud es de: {self.nivel_salud} , mi felicidad es de: {self.nivel_felicidad} y duermo: {self.atrib_unico} horas''')
         return self
 
 if __name__== '__main___':
